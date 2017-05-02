@@ -1,6 +1,6 @@
 <h1>Teams Index</h1>
 <ul>
-  <% @teams.each do |name, player| %>
-    <li><a href="/teams/<%=URI.encode(name.to_s)%>"><%=name%></a></li>
+  <% @teams.each do |team| %>
+    <li><a href="/teams/<%=URI.encode(team.team_name.to_s)%>"><%=team.team_name%></a></li>
   <% end %>
 </ul>

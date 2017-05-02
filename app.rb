@@ -10,7 +10,7 @@ get "/" do
 end
 
 get "/teams" do
-  @teams = TeamData::ROLL_CALL
+  @teams = Team.all #> [Team]
   erb :teams
 end
 
